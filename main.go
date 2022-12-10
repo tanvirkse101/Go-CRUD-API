@@ -3,6 +3,8 @@ package main
 import (
 	"C/Git-Projects/Go-CRUD-API/controllers"
 	"C/Git-Projects/Go-CRUD-API/models"
+	"fmt"
+	"time"
 
 	"github.com/gin-gonic/gin"
 )
@@ -12,6 +14,8 @@ func main() {
 	// r.GET("/", func(c *gin.Context) {
 	// 	c.JSON(http.StatusOK, gin.H{"data": "Test working"})
 	// })
+
+	fmt.Println(10 * time.Minute)
 
 	models.ConnectDatabase()
 
